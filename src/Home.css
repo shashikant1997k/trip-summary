@@ -1,0 +1,10 @@
+
+.home{
+    display: flex;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: wrap;
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,119 @@
+.collapsible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #19274C;
+    color: white;
+    cursor: pointer;
+    padding: 2px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.TableView{
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.table__totalExpenseskm{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    pointer-events: none;
+}
+.table__totalKM{
+    color: #00BDDC;
+    margin-right: 10px;
+}
+.table__totalExpenses{
+    color: #C2993B;
+}
+
+.active, .collapsible:hover {
+    background-color: #17244A;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.collapsible:focus{
+    outline: none;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+}
+
+.table__content{
+    padding: 12px 20px;
+}
+
+.table__content .table{
+    margin-bottom: 0px !important;
+}
+
+.table__content .table > thead{
+    background-color: #00BDDC;
+    color: white;
+}
+
+.table__content .table th{
+    text-align: center;
+    font-weight: normal;
+    padding: 0.35rem;
+}
+
+.action__button{
+    display: flex;
+    flex-direction: row;
+}
+
+.action__buttonOne{
+    margin-right: 5px !important;
+}
+
+.action__button button{
+    font-size: 14px;
+    color: white;
+    /* width: 185px; */
+    background-color: #37C4C9;
+    text-transform: none;
+}
+
+.action__button button:hover{
+    background-color: #37C4C7;
+}
+.action__button button:focus{
+    outline: none;
+}
+
+.tripStart__end, .trip__expense, .odometer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tripStart__end .MuiSvgIcon-root{
+    color: #00BDDC;
+    margin: 0 4px;
+}
+.trip__expense .MuiSvgIcon-root{
+    color: #00BDDC;
+}
+.odometer .MuiSvgIcon-root{
+    color: #00BDDC;
+    margin: 0 4px;
+}

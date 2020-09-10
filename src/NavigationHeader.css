@@ -1,0 +1,108 @@
+.navigation__header{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.dash__header{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dashboard{
+    font-weight: 600;
+    color: #56B9EA;
+    font-size: 14px;
+}
+
+.dashboard__trip{
+    font-size: 14px;
+    font-weight: 500;
+}
+.right{
+    display: flex;
+}
+
+.right .MuiGrid-root{
+    flex-direction: row;
+    align-items: center;
+}
+
+.right .MuiButtonBase-root{
+    padding: 0px !important;
+}
+
+.right .MuiFormControl-root{
+    border: 1px solid #56B9EA !important;
+    border-radius: 4px !important;
+    width: 150px !important;
+    background-color: white !important;
+    cursor: pointer !important;
+}
+
+.right .MuiInputBase-root{
+    padding: 0 10px !important;
+    height: 28px !important;
+}
+
+.right .MuiInput-underline:before{
+    content: "" !important;
+    border-bottom: 0 !important;
+}
+
+.right > .MuiGrid-root .MuiSvgIcon-root{
+    fill: #56B9EA !important;
+}
+
+.right > .MuiGrid-root .MuiIconButton-root:focus{
+    outline: none !important;
+}
+
+
+.from__to{
+    font-weight: 600;
+    margin: 0px 14px;
+    font-size: 14px;
+}
+
+.export:focus{
+    outline: none;
+}
+
+.export {
+    background: white !important;
+    width: 70px !important;
+    font-size: 12px !important;
+    text-transform: initial !important;
+    font-weight: 600 !important;
+    height: 28px !important;
+}
+
+.export .MuiSvgIcon-root{
+    font-size: 16px !important;
+    color: red !important;
+    font-weight: 800 !important;
+}
+
+.search__iconDiv{
+    display: flex;
+    align-items: center;
+    margin: 7px 0px 0 10px;
+}
+
+.searchIcon{
+    background-color: #37C4C9;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    height: 28px !important;
+    width: 30px !important;
+    border-radius: 3px;
+}

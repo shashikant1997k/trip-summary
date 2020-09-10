@@ -1,0 +1,90 @@
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.tabs__left{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+}
+
+.tabs__right{
+    display: flex;
+    justify-content: flex-end;
+    flex: 0.35;
+}
+
+.other__exp{
+    display: flex;
+    height: 80px;
+    background: #2F2F2F;
+    flex: 0.65;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.row__1{
+    display: flex;
+    flex-direction: row;
+}
+
+.row__2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.tabs .MuiSvgIcon-root{
+    color: white;
+}
+
+.common{
+    display: flex;
+    flex: 0.33;
+    height: 35px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.common__fontStyle{
+    color: white;
+    font-size: 14px;
+    margin-left: 5px;
+    /* font-weight: 500; */
+}
+
+.forward__icon{
+    margin-left: 5px;
+}
+
+.vehcle__number{
+    background-color: #29BDC2;
+    margin-right: 10px;
+}
+
+.total__trip{
+    background-color: #C2993B;
+    margin-right: 10px;
+}
+
+.total__km{
+    background-color: #005A93;
+}
+
+.trip__time{
+    background-color: #00A74B;
+    margin-right: 10px;
+}
+
+.total__time{
+    background-color: #962297;
+    margin-right: 10px;
+}
+
+.total__exp{
+    background-color: #6A5718;
+}
