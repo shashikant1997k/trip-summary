@@ -63,8 +63,8 @@ function TableView({ id, dailyRunningTime, endDay, startDay, tripLists }) {
                             <th>Trip Starts(Node) to Trip Ends(Node)</th>
                             <th>Driver Name</th>
                             <th>Trip Expenses</th>
-                            <th>Trip KM</th>
-                            <th>Trip GPS KM</th>
+                            <th>Trip Km</th>
+                            <th>Trip GPS Km</th>
                             <th>Trip Time</th>
                             <th>Odometer Reading</th>
                             <th>Action</th>
