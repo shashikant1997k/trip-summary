@@ -68,7 +68,7 @@ function Home() {
 
         async function getData(){
             try {
-                const res = await Axios.post("https://staging.watsoo.com:8080/watsoo-amazon-api/trip-controller-web/v1/vehicle/wise/summary/36", data);
+                const res = await Axios.post("http://staging.watsoo.com:8080/watsoo-amazon-api/trip-controller-web/v1/vehicle/wise/summary/36", data);
                 setItem(res);
                 console.log(res)
             } catch (error) {
