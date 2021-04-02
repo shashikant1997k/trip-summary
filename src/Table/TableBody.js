@@ -9,6 +9,8 @@ function TableBody({tripDetail, index}) {
     let [expenseSum, setExpenseSum] = useState(0);
 
     useEffect(() => {
+
+        // calculate total expense in a journey
         if(tripDetail?.tripExpenses.length){
             tripDetail.tripExpenses.forEach((val) => {
                 expenseSum += val.amount;
