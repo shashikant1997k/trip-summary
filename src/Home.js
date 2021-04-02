@@ -5,6 +5,7 @@ import NavigationHeader from './NavigationHeader';
 import Axios from 'axios';
 import moment from 'moment';
 import Tabs from './Tabs';
+import res from "./data";
 
 export const getDateTime = (timestamp, timeOnly) => {
     if(timeOnly){
@@ -51,35 +52,37 @@ export const getHoursMin = (timestamp) => {
 
 function Home() {
 
-    const [item, setItem] = useState({});
+//     const [item, setItem] = useState({});
     
-    useEffect(() => {
-        const data = {
-            "clientId": 10,
-            "dataRecord": {
-            "userRoleId": 4,
-            "userRoleName": "COMPANY",
-            "userId": 10
-            },
-            "fromDate": 1577888571659,
-            "toDate": 1593613371659,
-            "tripId": 36
-        }
+    const item = res;
+    
+//     useEffect(() => {
+//         const data = {
+//             "clientId": 10,
+//             "dataRecord": {
+//             "userRoleId": 4,
+//             "userRoleName": "COMPANY",
+//             "userId": 10
+//             },
+//             "fromDate": 1577888571659,
+//             "toDate": 1593613371659,
+//             "tripId": 36
+//         }
 
-        async function getData(){
-            try {
-                const res = await Axios.post("http://staging.watsoo.com:8080/watsoo-amazon-api/trip-controller-web/v1/vehicle/wise/summary/36", data);
-                setItem(res);
-                console.log(res)
-            } catch (error) {
-                console.log(error);
-            }
+//         async function getData(){
+//             try {
+//                 const res = await Axios.post("http://staging.watsoo.com:8080/watsoo-amazon-api/trip-controller-web/v1/vehicle/wise/summary/36", data);
+//                 setItem(res);
+//                 console.log(res)
+//             } catch (error) {
+//                 console.log(error);
+//             }
             
-        }
+//         }
 
-        getData();
+//         getData();
 
-    }, []);
+//     }, []);
 
     const arrayItem = item?.data?.data?.tripDetails;
     // console.log(arrayItem)
