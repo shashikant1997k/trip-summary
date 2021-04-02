@@ -1,4 +1,4 @@
-export let data = {
+let res = {
     "responseCode": 2000,
     "responseDescription": "success",
     "data": {
@@ -514,3 +514,5 @@ export let data = {
         ]
     }
 }
+
+export default res;
